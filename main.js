@@ -10,10 +10,10 @@ $('#upload-file').on('submit', function (e) {
         type: 'POST',
         url: '',
         processData: false,
+        contentType: false,
         data: data,
         headers: {
-            'authorization': '',
-            'content-type': 'multipart/form-data'
+            'authorization': ''
         }
 
     });
